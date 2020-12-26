@@ -1,0 +1,49 @@
+﻿<Window x:Class="Efecte_poze.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Efecte cu pixeli" Height="350" Width="525" ResizeMode="NoResize" WindowState="Maximized" Icon="IconApp.ico">
+    <StackPanel x:Name="GridPanel" Background="Transparent">
+        <Image x:Name="MainImage" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <DockPanel x:Name="MenuPanel" Background="#FFF0F0F0">
+            <Menu x:Name="MainMenu" Padding="0" HorizontalAlignment="Left" Background="#FFF0F0F0" VerticalAlignment="Center">
+                <MenuItem x:Name="FileMenu" Header="_File">
+                    <MenuItem x:Name="OpenMenu" Header="_Open" Click="OpenMenu_Click" />
+                    <MenuItem x:Name="SaveMenu" Header="_Save" Click="SaveMenu_Click" />
+                    <Separator />
+                    <MenuItem x:Name="ExitMenu" Header="E_xit" Click ="ExitMenu_Click" />
+                </MenuItem>
+                <MenuItem x:Name="MainRgbMenu" Header="_RGB">
+                    <MenuItem x:Name="RedMenu" Header="_Red" Click="RedMenu_Click" />
+                    <MenuItem x:Name="GreenMenu" Header="_Green" Click="GreenMenu_Click" />
+                    <MenuItem x:Name="BlueMenu" Header="_Blue" Click="BlueMenu_Click" />
+                    <MenuItem x:Name="GrayMenu" Header="Gr_ay" Click="GrayMenu_Click"/>
+                    <MenuItem x:Name="DesaturateMenu" Header="_Desaturate" Click="DesaturateMenu_Click"/>
+                    <MenuItem x:Name="CyanMenu" Header="_Cyan" Click="CyanMenu_Click"/>
+                    <MenuItem x:Name="MagentaMenu" Header="_Magenta" Click="MagentaMenu_Click"/>
+                    <MenuItem x:Name="YellowMenu" Header="_Yellow" Click="YellowMenu_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="CmykMenu" Header="_CMYK">
+                    <MenuItem x:Name="Cyan2Menu" Header="_Cyan" Click="Cyan2Menu_Click"/>
+                    <MenuItem x:Name="Magenta2Menu" Header="_Magenta" Click="Magenta2Menu_Click"/>
+                    <MenuItem x:Name="Yellow2Menu" Header="_Yellow" Click="Yellow2Menu_Click"/>
+                    <MenuItem x:Name="BlackMenu" Header="_Black" Click="BlackMenu_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="HslMenu" Header="_HSL">
+                    <MenuItem x:Name="HueMenu" Header="_Hue" Click="HueMenu_Click"/>
+                    <MenuItem x:Name="SaturationMenu" Header="_Saturation" Click="SaturationMenu_Click"/>
+                    <MenuItem x:Name="LightnessMenu" Header="_Lightness" Click="LightnessMenu_Click"/>
+                 </MenuItem>
+                <MenuItem x:Name="ConvertMenu" Header="C_onvert">
+                    <MenuItem x:Name="CmykToRgbMenu" Header="_CMYK to RGB" Click="CmykToRGBMenu_Click"/>
+                    <MenuItem x:Name="HslToRgbMenu" Header="_HSL to RGB" Click="HslToRGBMenu_Click"/>
+                    <Separator></Separator>
+                    <MenuItem x:Name="RgbMenu" Header="_RGB" Click="RGBMenu_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="HelpMenu" Header="_Help">
+                    <MenuItem x:Name="AboutMenu" Header="_About" Click="AboutMenu_Click"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+            <Image x:Name="ImgPhoto"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,6 @@
+5
+Ion Popescu 7 9 8 7 6 9 8 8
+Popescu Ion 6 2 4 8 5 7 10
+Gheorghe Ion 7 5 5 5 5 5 5 5
+Ion Gheorghe 5 10 10 10 10 10
+Popescu Ghoerghe 6 8 9 7 9 8 9
